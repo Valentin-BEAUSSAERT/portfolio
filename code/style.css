@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 5px;
+}
+
+header {
+    height: 120px;
+    background-color: rgb(21, 1, 55);
+    color: rgb(255, 255, 255);
+    border-radius: 14px;
+    padding: 5px 30px 5px 30px;
+    font-family: "Lexend", sans-serif;
+}
+
+#webceptionButton {
+    background-color: rgb(21, 1, 55);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 14px;
+    padding: 5px 10px;
+    font-family: "Lexend", sans-serif;
+    position: relative;
+    right: 60px;
+}
+
+#webceptionButton:hover {
+    background-color: #d82d49; /* RiotGames Red */
+}
+
+#headerH {
+    padding-left: 90px;
+    font-size: 30px;
+}
+
+.headerNav li {
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+    padding: 10px; 
+    position: relative;
+    right: 60px;
+}
+
+.headerNav ul {
+    text-align: right;
+}
