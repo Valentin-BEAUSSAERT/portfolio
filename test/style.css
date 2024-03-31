@@ -6,7 +6,7 @@ html, body {
 
 .background {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,6 +72,7 @@ h1 {
     font-weight: 400;
 }
 
+
 .front-end {
     font-size: 0.4em;
 }
@@ -92,3 +93,36 @@ h1 {
 .button-contact:focus {
     background-color: #0056b3;
 }
+
+ .content {
+    max-width: 80%; /* Ou une largeur spécifique en px */
+    text-align: left; /* Centre le texte à l'intérieur du conteneur */
+    padding: 20px; /* Ajoute un peu d'espace autour du texte */
+    margin: auto; /* Centre le conteneur dans la section */ 
+}
+
+.content h2 {
+    position: relative;
+    bottom: 0.8em;
+    right: 0.5em;
+    color: #ffffff; /* Couleur du texte */
+    font-size: 7.5rem; /* Taille de la police */
+    margin-bottom: 20px; /* Espace sous le h2 */
+    font-family: "Karantina", sans-serif;
+    font-weight: 400;
+}
+
+.content p {
+    position: relative;
+    right: 1.8em;
+    bottom: 1.5em;
+    color: #ffffff; /* Couleur du texte */
+    margin-bottom: 50px; /* Espace sous chaque paragraphe */
+    font-family: "KoHo";
+    font-size: 32px;
+    padding-right: 15em;
+    line-height: 1.8em;
+}
+
+
+
