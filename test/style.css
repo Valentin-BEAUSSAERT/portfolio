@@ -245,3 +245,49 @@ h1 {
     height: 100vh; /* Assurez-vous que la section est assez haute */
     margin: auto;
 }
+
+/*================================STYLE POUR LA SECTION 6===============================*/
+
+#image6 .section-title {
+    color: #ffffff;
+    font-family: "Karantina", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 0; 
+    margin-bottom: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#image6 .section-text1 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 1.6em;
+    line-height: 1.8em;
+    text-align: justify;
+    position: relative;
+    width: 60%;
+    left: 40%;
+    bottom: 330px;
+}
+
+#image6 .section-text2 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 1.8em;
+    line-height: 1.8em;
+    text-align: justify;
+    position: relative;
+    bottom: ;
+}
+
+
+#image6 .content {
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+/*================================STYLE POUR LA SECTION 7===============================*/
