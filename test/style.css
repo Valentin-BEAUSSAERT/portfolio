@@ -97,7 +97,7 @@ h1 {
 
 
 
-.section-title {
+#image2 .section-title {
         /* Styles pour le titre de la section */
     
     color: #ffffff;
@@ -111,7 +111,7 @@ h1 {
     /* Ajustez positionnement si nécessaire, en supprimant bottom et right si vous n'en avez pas besoin */
 }
 
-.section-text {
+#image2 .section-text {
     color: #ffffff;
     font-family: "KoHo";
     font-size: 32px;
@@ -124,7 +124,7 @@ h1 {
 
 }
 
-.content {
+#image2 .content {
     max-width: 90%;
     margin: auto;
     display: flex;
@@ -134,7 +134,31 @@ h1 {
     /* Le padding gauche est mis à 0 pour réduire l'espace depuis le bord de la fenêtre */
 }
 
+#image3 .section-title {
+    color: #ffffff;
+    font-family: "Karantina", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+}
 
+#image3 .section-text {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 1.5em;
+    line-height: 1.8em;
+    text-align: justify;
+    padding-left: 18em;
+    padding-right: 14em;  
+}
 
+#image3 .content {
+    max-width: 90%;
+    margin: 2em;
+}
 
 
