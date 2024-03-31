@@ -1,3 +1,8 @@
+
+* {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -161,4 +166,31 @@ h1 {
     margin: 2em;
 }
 
+#image4 .section-title {
+    color: #ffffff;
+    font-family: "Karantina", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 400;
+    text-align: center; 
+    position: relative;
+    bottom: 80px;
+}
+
+#image4 .section-text {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 2em;
+    line-height: 1.8em;
+    text-align: justify;
+    width: 50%;
+    position: relative;
+    bottom: 80px;
+    padding-bottom: 60px;
+}
+
+#image4 .content {
+    max-width: 90%;
+    margin: auto;
+   
+}
 
