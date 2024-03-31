@@ -14,8 +14,9 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
 }
-
+ 
 .navbar {
     position: fixed;
     top: 0;
@@ -64,11 +65,11 @@ html, body {
 
 h1 {
     font-family: "Karantina", sans-serif;
-    font-size: 16.5vh;
+    font-size: 18.5vh;
     color: white;
     text-align: left;
     margin: 0;
-    padding-right: 4.5em;
+    padding-right: 3.5em;
     font-weight: 400;
 }
 
@@ -94,35 +95,46 @@ h1 {
     background-color: #0056b3;
 }
 
- .content {
-    max-width: 80%; /* Ou une largeur spécifique en px */
-    text-align: left; /* Centre le texte à l'intérieur du conteneur */
-    padding: 20px; /* Ajoute un peu d'espace autour du texte */
-    margin: auto; /* Centre le conteneur dans la section */ 
-}
 
-.content h2 {
-    position: relative;
-    bottom: 0.8em;
-    right: 0.5em;
-    color: #ffffff; /* Couleur du texte */
-    font-size: 7.5rem; /* Taille de la police */
-    margin-bottom: 20px; /* Espace sous le h2 */
+
+.section-title {
+        /* Styles pour le titre de la section */
+    
+    color: #ffffff;
+    font-size: 7.5rem; /* Ajustez la taille de la police comme nécessaire */
     font-family: "Karantina", sans-serif;
     font-weight: 400;
+    text-align: left; /* Alignez le texte à gauche */
+    margin: 0 ; /* Enlevez les marges si nécessaire */
+    margin-bottom: 1em;
+    padding: 50px 0 60px 0; /* Ajustez le padding pour positionner le texte */
+    /* Ajustez positionnement si nécessaire, en supprimant bottom et right si vous n'en avez pas besoin */
 }
 
-.content p {
-    position: relative;
-    right: 1.8em;
-    bottom: 1.5em;
-    color: #ffffff; /* Couleur du texte */
-    margin-bottom: 50px; /* Espace sous chaque paragraphe */
+.section-text {
+    color: #ffffff;
     font-family: "KoHo";
     font-size: 32px;
-    padding-right: 15em;
     line-height: 1.8em;
+    text-align: left;
+    margin: 0;
+    margin-top: -1.5em;
+    padding: 1.5em 20em 1.5em 0;
+    transform: translateY(-3.5em); /* Déplacez visuellement les paragraphes vers le haut */
+
 }
+
+.content {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alignez les enfants à gauche */
+    padding: 20px 20px 20px 0; /* padding-top, padding-right, padding-bottom, padding-left */
+    /* Le padding gauche est mis à 0 pour réduire l'espace depuis le bord de la fenêtre */
+}
+
+
 
 
 
