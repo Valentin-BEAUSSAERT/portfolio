@@ -9,6 +9,8 @@ html, body {
     height: 100%;
 }
 
+/*================================STYLE POUR LE BACKGROUND===============================*/
+
 .background {
     width: 100%;
     min-height: 100vh;
@@ -22,6 +24,8 @@ html, body {
     background-attachment: fixed;
 }
  
+/*================================STYLE POUR LA NAVBAR===============================*/
+
 .navbar {
     position: fixed;
     top: 0;
@@ -68,6 +72,8 @@ html, body {
     pointer-events: none; /* Empêche les interactions avec la navbar lorsqu'elle est invisible */
 }
 
+/*================================STYLE POUR LA PRESENTATION===============================*/
+
 h1 {
     font-family: "Karantina", sans-serif;
     font-size: 18.5vh;
@@ -82,6 +88,8 @@ h1 {
 .front-end {
     font-size: 0.4em;
 }
+
+/*================================STYLE POUR LE BOUTON===============================*/
 
 .button-contact {
     background-image: linear-gradient(145deg, #DFD4BC, #6D9E95);
@@ -121,7 +129,7 @@ h1 {
     transform: translateY(-2px);
 }
 
-
+/*================================STYLE POUR LA SECTION 1===============================*/
 
 #image2 .section-title {
         /* Styles pour le titre de la section */
@@ -160,6 +168,8 @@ h1 {
     /* Le padding gauche est mis à 0 pour réduire l'espace depuis le bord de la fenêtre */
 }
 
+/*================================STYLE POUR LA SECTION 3===============================*/
+
 #image3 .section-title {
     color: #ffffff;
     font-family: "Karantina", sans-serif;
@@ -186,6 +196,8 @@ h1 {
     max-width: 90%;
     margin: 2em;
 }
+
+/*================================STYLE POUR LA SECTION 4===============================*/
 
 #image4 .section-title {
     color: #ffffff;
@@ -214,6 +226,8 @@ h1 {
     margin: auto;
    
 }
+
+/*================================STYLE POUR LA SECTION 5===============================*/
 
 #image5 .section-text {
     color: #ffffff;
