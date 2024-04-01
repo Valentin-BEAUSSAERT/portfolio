@@ -182,14 +182,28 @@ h1 {
     padding-bottom: 50px;
 }
 
-#image3 .section-text {
+#image3 .section-text1 {
     color: #ffffff;
     font-family: "KoHo";
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.8em;
     text-align: justify;
-    padding-left: 18em;
-    padding-right: 14em;  
+    padding-left: 16em;
+    padding-right: 12em;  
+    margin-top: -1.5em;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+#image3 .section-text2 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 1.4em;
+    line-height: 1.8em;
+    text-align: justify;
+    padding-left: 16em;
+    padding-right: 12em;
+    margin-top: -1.5em;
 }
 
 #image3 .content {
@@ -209,16 +223,25 @@ h1 {
     bottom: 80px;
 }
 
-#image4 .section-text {
+#image4 .section-text1 {
     color: #ffffff;
     font-family: "KoHo";
     font-size: 2em;
     line-height: 1.8em;
     text-align: justify;
     width: 50%;
-    position: relative;
-    bottom: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 8%;;
+    position: relative;    
+}
+
+#image4 .section-text2 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 2em;
+    line-height: 1.8em;
+    text-align: justify;
+    width: 50%;
+
 }
 
 #image4 .content {
@@ -235,6 +258,7 @@ h1 {
     font-size: 2.2em;
     line-height: 1.8em;
     text-align: justify;
+    
 }
 
 #image5 .section-text2 {
@@ -299,3 +323,31 @@ h1 {
 }
 
 /*================================STYLE POUR LA SECTION 7===============================*/
+
+/*================================MEDIAQUERIES===============================*/
+@media (max-width: 768px) {
+    .navbar li {
+        margin: 0 0.5rem;
+    }
+
+    .navbar a {
+        font-size: 0.8rem;
+    }
+
+    h1, .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-text {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .button-contact {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+
+
