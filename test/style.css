@@ -50,13 +50,13 @@ html, body {
 }
 
 .navbar li {
-    margin: 0 3em;
+    margin: 0 1.5em;
 }
 
 .navbar a {
     text-decoration: none;
     color: white;
-    font-size: 2.0em;
+    font-size: 2em;
     font-family: "Karantina", sans-serif;
 }
 
@@ -182,7 +182,7 @@ h1 {
     padding-bottom: 50px;
 }
 
-#image3 .section-text {
+#image3 .section-text1 {
     color: #ffffff;
     font-family: "KoHo";
     font-size: 1.5em;
@@ -191,6 +191,17 @@ h1 {
     padding-left: 18em;
     padding-right: 14em;  
 }
+
+#image3 .section-text2 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 1.5em;
+    line-height: 1.8em;
+    text-align: justify;
+    padding-left: 18em;
+    padding-right: 14em;  
+}
+
 
 #image3 .content {
     max-width: 90%;
@@ -298,4 +309,19 @@ h1 {
     position: relative;
 }
 
-/*================================STYLE POUR LA SECTION 7===============================*/
+/*================================MEDIA QUERIES==============================*/
+
+@media (max-width: 1680px) {
+    #image3 .section-text1 {
+        font-size: 1.35em;
+        margin-top: 0;
+        text-align: justify;
+        padding-bottom:
+    }
+
+    #image3 .section-text2 {
+        font-size: 1.35em;
+        margin-top: 0;
+        text-align: justify;
+    }
+}
