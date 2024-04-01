@@ -3,25 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio Valentin Beaussaert</title>
+    <title>Portfolio de Valentin Beaussaert</title>
     <link rel="stylesheet" href="style.css">
     <script src="smooth.js" defer></script>
+    <script src="scroll.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background" id="image1"></div>
-    <div class="background" id="image2"></div>
-    <div class="background" id="image3"></div>
-    <div class="background" id="image4"></div>
-    <div class="background" id="image5"></div>
-    <div class="background" id="image6"></div>
-    <div class="background" id="image7"></div>
-    <div class="background" id="image8"></div>
-<!-- Ajoutez autant de divs que nécessaire pour vos images -->
 
-    <div class="navbar">
+    <header class="navbar">
         <nav>
-            <!-- Contenu de votre navigation ici -->
-        </nav>
-    </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <section id="home" class="background" style="background-image: url('../assets/12.png');">
+        <h1>
+            Hi,<br>
+            I'm Valentin,<br>
+            Web Developer <span class="front-end">front-end</span>
+        </h1>   
+        <a href="#contact" class="button-contact">Contact me</a>
+    </section>
+
+    <!-- Répétez cette section pour les images suivantes, en ajustant l'id et le style de background-image -->
+    <section id="image2" class="background" style="background-image: url('../assets/2.png');">
+        <div class="content">
+            <h2 class="section-title">Mon Parcours</h2>
+            <p class="section-text">Bienvenue sur mon portfolio ! Je suis ravi de partager avec vous le voyage unique qui m'a mené à devenir développeur web full stack. </p>
+            <p class="section-text">Mon parcours est loin d'être linéaire, mais chaque détournement, chaque nouvelle route explorée, a contribué à façonner le professionnel créatif et dynamique que je suis aujourd'hui.</p>
+        </div>
+    </section>
+    <section id="image3" class="background" style="background-image: url('../assets/3.png');">
+        <div class="content">
+            <h2 class="section-title">Mes Premiers Pas</h2>
+            <p class="section-text">Mon aventure a commencé par un BAC ST2S, animé dès le départ par un désir d'aider et de contribuer à la société. Cette aspiration m'a conduit à entreprendre des études en école d'infirmier, mais j'ai rapidement réalisé que ma véritable voie était ailleurs. En quête de ma passion, je me suis dirigé vers la FAC de sport en STAPS, animé par l'amour du sport et le désir d'enseigner et de motiver les jeunes esprits en tant que prof d'EPS.</p>
+            <p class="section-text">Cependant, après avoir décroché ma licence, un sentiment persistant d'inachevé m'a poussé à explorer un domaine qui m'avait toujours fasciné : l'informatique. Aujourd'hui, je poursuis avec enthousiasme une formation en école d'informatique, où chaque jour est une nouvelle occasion d'apprendre et de grandir en tant que développeur web full stack.</p>
+        </div>
+    </section>
+    <section id="image4" class="background" style="background-image: url('../assets/4.png');">
+        <div class="content">
+            <h2 class="section-title">Une vie Animée par la Créativité</h2>
+            <p class="section-text">En parallèle à mes études, j'ai toujours eu un pied dans le monde artistique. Musicien autodidacte, je m'exprime à travers la guitare, le piano, la basse, le ukulélé et, plus récemment, le violon.</p>
+            <p class="section-text"> La musique assistée par ordinateur, le mixage, le mastering, l'écriture et la poésie sont également des terrains où je laisse libre cours à mon imagination.</p>
+        </div>
+    </section>
+    <section id="image5" class="background" style="background-image: url('../assets/5.png');">
+        <div class="content">
+            <p class="section-text1">L'animation a également joué un rôle prépondérant dans ma vie. En tant qu'animateur au sein des ACM (accueils collectifs de mineurs) et directeur des animations de l'AS Aiguier Tennis, j'ai eu l'opportunité de développer davantage ma créativité et mon imagination en élaborant  de nouvelles idées pour captiver les enfants.</p>
+            <p class="section-text2"><em>"L'imagination est le début de la création. Vous imaginez ce que vous désirez, vous voulez ce que vous imaginez et finalement vous créez ce que vous voulez." – George Bernard Shaw</em></p>
+        </div>
+    </section>
+    <section id="image6" class="background" style="background-image: url('../assets/6.png');">
+        <div class="content">
+            <h2 class="section-title">Une Passion pour l'Informatique</h2>
+            <p class="section-text1">Depuis mon enfance, l'informatique occupe une place centrale dans ma vie. Construire mon premier PC pour jouer avec mon grand frère a été le catalyseur de ma passion pour la technologie.</p>
+            <p class="section-text2">Cette passion pour l'informatique ne s'est jamais démentie, évoluant vers une fascination pour le développement web, où je peux allier créativité, logique et innovation.</p>
+        </div>
+    </section>
+    <section id="image7" class="background" style="background-image: url('../assets/7.png');"></section>
+    <section id="image8" class="background" style="background-image: url('../assets/8.png');"></section>
+    <!-- ... autres sections ... -->
+
 </body>
 </html>

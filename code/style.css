@@ -1,45 +1,301 @@
+
+* {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
+/*================================STYLE POUR LE BACKGROUND===============================*/
+
 .background {
     width: 100%;
-    height: 100vh; /* Utilisez vh pour s'assurer que chaque image couvre 100% de la hauteur de la fenêtre du navigateur */
+    min-height: 100vh;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+ 
+/*================================STYLE POUR LA NAVBAR===============================*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;    
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    will-change: transform, opacity; /* Optimisation des performances pour les animations */
 }
 
-#image1 {
-    background-image: url('../assets/1.png'); /* Changez le chemin pour votre première image */
-}
-#image2 {
-    background-image: url('../assets/2.png'); /* Changez le chemin pour votre deuxième image */
-}
-
-#image3 {
-    background-image: url('../assets/3.png'); /* Changez le chemin pour votre troisième image */
+.navbar nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
 }
 
-#image4 {
-    background-image: url('../assets/4.png'); /* Changez le chemin pour votre quatrième image */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
-#image5 {
-    background-image: url('../assets/5.png'); /* Changez le chemin pour votre cinquième image */
+.navbar li {
+    margin: 0 3em;
 }
 
-#image6 {
-    background-image: url('../assets/6.png'); /* Changez le chemin pour votre sixième image */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.0em;
+    font-family: "Karantina", sans-serif;
 }
 
-#image7 {
-    background-image: url('../assets/7.png'); /* Changez le chemin pour votre septième image */
+.navbar a:hover,
+.navbar a:focus {
+    color: #dddddd;
 }
 
-#image8 {
-    background-image: url('../assets/8.png'); /* Changez le chemin pour votre huitième image */
+.navbar-hidden {
+     /* ou vous pouvez utiliser 'opacity: 0;' pour un effet de fade out */
+    transform: translateY(-100%); /* Déplace la navbar hors de l'écran par le haut */
+    opacity: 0; /* Rend la navbar transparente */
+    pointer-events: none; /* Empêche les interactions avec la navbar lorsqu'elle est invisible */
 }
-/* Répétez pour autant d'images que vous avez, en ajustant l'ID et le chemin de l'image */
+
+/*================================STYLE POUR LA PRESENTATION===============================*/
+
+h1 {
+    font-family: "Karantina", sans-serif;
+    font-size: 18.5vh;
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding-right: 3.5em;
+    font-weight: 400;
+}
+
+
+.front-end {
+    font-size: 0.4em;
+}
+
+/*================================STYLE POUR LE BOUTON===============================*/
+
+.button-contact {
+    background-image: linear-gradient(145deg, #DFD4BC, #6D9E95);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    right: 35em;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateZ(0); /* Assurez la cohérence de l'accélération matérielle */
+    backface-visibility: hidden;
+}
+
+.button-contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.button-contact:hover::before {
+    opacity: 1;
+}
+
+.button-contact:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/*================================STYLE POUR LA SECTION 1===============================*/
+
+#image2 .section-title {
+        /* Styles pour le titre de la section */
+    
+    color: #ffffff;
+    font-size: 7.5rem; /* Ajustez la taille de la police comme nécessaire */
+    font-family: "Karantina", sans-serif;
+    font-weight: 400;
+    text-align: left; /* Alignez le texte à gauche */
+    margin: 0 ; /* Enlevez les marges si nécessaire */
+    margin-bottom: 1em;
+    padding: 50px 0 60px 0; /* Ajustez le padding pour positionner le texte */
+    /* Ajustez positionnement si nécessaire, en supprimant bottom et right si vous n'en avez pas besoin */
+}
+
+#image2 .section-text {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 32px;
+    line-height: 1.8em;
+    text-align: left;
+    margin: 0;
+    margin-top: -1.5em;
+    padding: 1.5em 20em 1.5em 0;
+    transform: translateY(-3.5em); /* Déplacez visuellement les paragraphes vers le haut */
+
+}
+
+#image2 .content {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alignez les enfants à gauche */
+    padding: 20px 20px 20px 0; /* padding-top, padding-right, padding-bottom, padding-left */
+    /* Le padding gauche est mis à 0 pour réduire l'espace depuis le bord de la fenêtre */
+}
+
+/*================================STYLE POUR LA SECTION 3===============================*/
+
+#image3 .section-title {
+    color: #ffffff;
+    font-family: "Karantina", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+}
+
+#image3 .section-text {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 1.5em;
+    line-height: 1.8em;
+    text-align: justify;
+    padding-left: 18em;
+    padding-right: 14em;  
+}
+
+#image3 .content {
+    max-width: 90%;
+    margin: 2em;
+}
+
+/*================================STYLE POUR LA SECTION 4===============================*/
+
+#image4 .section-title {
+    color: #ffffff;
+    font-family: "Karantina", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 400;
+    text-align: center; 
+    position: relative;
+    bottom: 80px;
+}
+
+#image4 .section-text {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 2em;
+    line-height: 1.8em;
+    text-align: justify;
+    width: 50%;
+    position: relative;
+    bottom: 80px;
+    padding-bottom: 60px;
+}
+
+#image4 .content {
+    max-width: 90%;
+    margin: auto;
+   
+}
+
+/*================================STYLE POUR LA SECTION 5===============================*/
+
+#image5 .section-text1 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 2.2em;
+    line-height: 1.8em;
+    text-align: justify;
+}
+
+#image5 .section-text2 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 2.4em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+#image5 .content {
+    display: flex; /* Utilise flexbox pour organiser les éléments */
+    flex-direction: column; /* Empile les éléments verticalement */
+    justify-content: space-between; /* Place un élément en haut et l'autre en bas */
+    max-width: 90%;
+    height: 100vh; /* Assurez-vous que la section est assez haute */
+    margin: auto;
+}
+
+/*================================STYLE POUR LA SECTION 6===============================*/
+
+#image6 .section-title {
+    color: #ffffff;
+    font-family: "Karantina", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 0; 
+    margin-bottom: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#image6 .section-text1 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 1.8em;
+    line-height: 1.8em;
+    text-align: justify;
+    position: relative;
+    width: 60%;
+    left: 38%;
+    bottom: 350px;
+}
+
+#image6 .section-text2 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 2em;
+    line-height: 1.8em;
+    text-align: justify;
+    position: relative;
+    bottom: 40px;
+}
+
+
+#image6 .content {
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+/*================================STYLE POUR LA SECTION 7===============================*/
