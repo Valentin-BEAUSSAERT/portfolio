@@ -272,23 +272,23 @@ h1 {
 #image6 .section-text1 {
     color: #ffffff;
     font-family: "KoHo";
-    font-size: 1.6em;
+    font-size: 1.8em;
     line-height: 1.8em;
     text-align: justify;
     position: relative;
     width: 60%;
-    left: 40%;
-    bottom: 330px;
+    left: 38%;
+    bottom: 350px;
 }
 
 #image6 .section-text2 {
     color: #ffffff;
     font-family: "KoHo";
-    font-size: 1.8em;
+    font-size: 2em;
     line-height: 1.8em;
     text-align: justify;
     position: relative;
-    bottom: ;
+    bottom: 40px;
 }
 
 
