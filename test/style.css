@@ -321,6 +321,40 @@ h1 {
     position: relative;
 }
 
+/*================================STYLE POUR LA SECTION 7===============================*/
+
+#image7 .section-title {
+    color: #ffffff;
+    font-family: "Karantina", sans-serif;
+    font-size: 6.5rem;
+    font-weight: 400;
+    text-align: left;
+    width: 8em;
+    height: 2em;
+    position: relative;
+    right: 28vh;
+    bottom: 5vh;
+    
+        
+}
+
+#image7 .section-text {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 1.7em;
+    line-height: 1.8em;
+    text-align: justify;
+    width: 28em;
+    height: 19em;
+    position: relative;
+    left: 32vh;
+    bottom: 8vh;
+}
+
+#image7 .content {
+    max-width: 90%;
+    margin: auto;
+}
 /*================================MEDIA QUERIES==============================*/
 
 @media (max-width: 1680px) {
