@@ -365,7 +365,7 @@ h1 {
     line-height: 1.8em;
     text-align: justify;
     position: relative;
-    bottom: 6vh;
+    bottom: 4vh;
 }
 
 #image8 .section-text2 {
@@ -375,8 +375,8 @@ h1 {
     line-height: 1.8em;
     text-align: justify;
     position: relative;
-    width: 890px;
-    bottom: 2vh;
+    width: 860px;
+    vh;
 
 }
 
