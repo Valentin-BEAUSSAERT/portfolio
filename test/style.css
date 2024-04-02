@@ -220,7 +220,19 @@ h1 {
     bottom: 80px;
 }
 
-#image4 .section-text {
+#image4 .section-text1 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 2em;
+    line-height: 1.8em;
+    text-align: justify;
+    width: 50%;
+    position: relative;
+    bottom: 80px;
+    padding-bottom: 60px;
+}
+
+#image4 .section-text2 {
     color: #ffffff;
     font-family: "KoHo";
     font-size: 2em;
@@ -322,5 +334,31 @@ h1 {
         font-size: 1.35em;
         margin-top: 0;
         text-align: justify;
+    }
+
+    #image4 .section-text1 {
+        font-size: 1.8em;
+    }
+
+    #image4 .section-text2 {
+        font-size: 1.8em;
+    }
+
+    #image5 .section-text1 {
+        font-size: 1.8em;
+    }
+
+    #image5 .section-text2 {
+        font-size: 2em;
+    }
+
+    #image6 .section-text1 {
+        font-size: 1.8em;
+    }
+
+    #image6 .section-text2 {
+        font-size: 1.8em;
+        position: relative;
+        bottom: 15vh;
     }
 }

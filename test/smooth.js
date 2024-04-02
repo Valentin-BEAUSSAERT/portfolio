@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             throttleTimeout = null;
             const direction = e.deltaY > 0 ? 1 : -1; // Détermine la direction du défilement
             scrollToSection(currentSectionIndex + direction);
-        }, 250); // Utilisez un délai constant pour simplifier
+        }, 500); // Utilisez un délai constant pour simplifier
     };
   
     // Suppression de la condition spécifique à Mac pour unifier le comportement
