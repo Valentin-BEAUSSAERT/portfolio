@@ -355,6 +355,37 @@ h1 {
     max-width: 90%;
     margin: auto;
 }
+
+/*================================STYLE POUR LA SECTION 8===============================*/
+
+#image8 .section-text1 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 1.7em;
+    line-height: 1.8em;
+    text-align: justify;
+    position: relative;
+    bottom: 6vh;
+}
+
+#image8 .section-text2 {
+    color: #ffffff;
+    font-family: "KoHo";
+    font-size: 1.7em;
+    line-height: 1.8em;
+    text-align: justify;
+    position: relative;
+    width: 890px;
+    bottom: 2vh;
+
+}
+
+#image8 .content {
+    max-width: 90%;
+    margin: auto;
+}
+
+
 /*================================MEDIA QUERIES==============================*/
 
 @media (max-width: 1680px) {
