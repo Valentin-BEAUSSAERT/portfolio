@@ -253,7 +253,7 @@ h1 {
     font-size: 2em;
     line-height: 1.8em;
     text-align: justify;
-    width: 50%;
+    width: 55%;
     position: relative;
     bottom: 80px;
     padding-bottom: 60px;
@@ -265,7 +265,7 @@ h1 {
     font-size: 2em;
     line-height: 1.8em;
     text-align: justify;
-    width: 50%;
+    width: 55%;
     position: relative;
     bottom: 80px;
     padding-bottom: 60px;
@@ -414,6 +414,8 @@ h1 {
 /*================================MEDIA QUERIES==============================*/
 
 @media (max-width: 1680px) {
+
+
     #image3 .section-text1 {
         font-size: 1.35em;
         margin-top: 0;
@@ -427,15 +429,17 @@ h1 {
     }
 
     #image4 .section-text1 {
-        font-size: 1.8em;
+        font-size: 1.4em;
+        margin-top: -5vh;
     }
 
     #image4 .section-text2 {
-        font-size: 1.8em;
+        font-size: 1.4em;
+        margin-top: -5vh;
     }
 
     #image5 .section-text1 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     #image5 .section-text2 {
@@ -443,13 +447,22 @@ h1 {
     }
 
     #image6 .section-text1 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     #image6 .section-text2 {
         font-size: 1.8em;
         position: relative;
-        bottom: 15vh;
+    }
+
+    #image8 .section-text1 {
+        font-size: 1.55em;
+        margin-top: 0;
+    }
+
+    #image8 .section-text2 {
+        font-size: 1.55em;
+        line-height: 1.8em;
     }
 }
 
@@ -464,10 +477,13 @@ h1 {
     position: relative;
     top: 4vh;
     left: 70vh;
+    font-family: "Karantina", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    
 }
 
 .button-to-top:hover {
     background-color: #DFD4BC; /* Légère variation pour l'interaction */
 }
-
 
