@@ -36,6 +36,8 @@ html, body {
     will-change: transform, opacity; /* Optimisation des performances pour les animations */
 }
 
+
+
 .navbar nav {
     display: flex;
     justify-content: center;
@@ -53,16 +55,41 @@ html, body {
     margin: 0 1.5em;
 }
 
+.navbar a::before {
+    content: '';
+    position: absolute;
+    width: 100%; /* Largeur initiale */
+    height: 2px; /* Hauteur du trait sous le lien */
+    bottom: 0; /* Position sous le texte */
+    left: 0;
+    background-color: #DFD4BC; /* Couleur du trait */
+    visibility: hidden; /* Caché initialement */
+    transform: scaleX(0); /* Réduit à 0 pour l'animation */
+    transition: all 0.3s ease-in-out 0s; /* Animation douce */
+}
+
 .navbar a {
-    text-decoration: none;
-    color: white;
     font-size: 2em;
     font-family: "Karantina", sans-serif;
+    color: white; /* Couleur de texte initiale */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block; /* Permet la transformation */
+    position: relative; /* Nécessaire pour le positionnement des éléments pseudo */
+    transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
+
+}
+
+.navbar a:hover::before {
+    visibility: visible; /* Devient visible */
+    transform: scaleX(1); /* S'étend à la taille originale */
 }
 
 .navbar a:hover,
 .navbar a:focus {
-    color: #dddddd;
+    color: #6D9E95; /* Change la couleur du texte au survol */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+
+
 }
 
 .navbar-hidden {
@@ -333,9 +360,7 @@ h1 {
     height: 2em;
     position: relative;
     right: 28vh;
-    bottom: 5vh;
-    
-        
+    bottom: 5vh;    
 }
 
 #image7 .section-text {
@@ -358,11 +383,12 @@ h1 {
 
 /*================================STYLE POUR LA SECTION 8===============================*/
 
+
 #image8 .section-text1 {
     color: #ffffff;
     font-family: "KoHo";
     font-size: 1.7em;
-    line-height: 1.8em;
+    line-height: 1.6em;
     text-align: justify;
     position: relative;
     bottom: 4vh;
@@ -372,7 +398,7 @@ h1 {
     color: #ffffff;
     font-family: "KoHo";
     font-size: 1.7em;
-    line-height: 1.8em;
+    line-height: 1.6em;
     text-align: justify;
     position: relative;
     width: 860px;
@@ -426,3 +452,22 @@ h1 {
         bottom: 15vh;
     }
 }
+
+.button-to-top {
+    margin-top: 20px; /* Ajustez selon votre design */
+    padding: 10px 20px;
+    background-color: rgba(60, 78, 108, 0.55); /* Choisissez une couleur qui s'intègre dans votre palette */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: relative;
+    top: 4vh;
+    left: 70vh;
+}
+
+.button-to-top:hover {
+    background-color: #DFD4BC; /* Légère variation pour l'interaction */
+}
+
+
