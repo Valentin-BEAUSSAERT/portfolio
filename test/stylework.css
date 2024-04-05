@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url('../assets/1.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.construction {
+    position: relative;
+    text-align: center;
+    z-index: 2; /* Assurez-vous que l'engrenage et le texte sont au-dessus du fond */
+}
+
+.construction p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #fff; /* Changez la couleur du texte si nécessaire pour le contraste */
+    margin-top: 5vh;
+    padding-bottom: 3vh;
+}
+
+.gear {
+    font-size: 96px; /* Taille de l'engrenage */
+    color: #fff; /* Changez la couleur de l'engrenage si nécessaire pour le contraste */
+    animation: spin 2s linear infinite;
+}
+
+.home-button {
+    padding: 10px 20px;
+    background-color: rgba(60, 78, 108, 0.55); /* Choisissez une couleur qui s'intègre dans votre palette */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    position: flex;
+    font-family: "Karantina", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    
+}
+
+.home-button:hover {
+    background-color: #3c148d; /* Légère variation pour l'interaction */
+}
+
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
