@@ -485,7 +485,7 @@ h1 {
 .button-to-top {
     margin-top: 20px; /* Ajustez selon votre design */
     padding: 10px 20px;
-    background-color: rgba(60, 78, 108, 0.55); /* Choisissez une couleur qui s'intègre dans votre palette */
+    background-color: #414437; /* Choisissez une couleur qui s'intègre dans votre palette */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -495,11 +495,10 @@ h1 {
     left: 72vh;
     font-family: "Karantina", sans-serif;
     font-size: 1.5em;
-    font-weight: 400;
-    
+    font-weight: 400;   
 }
 
 .button-to-top:hover {
-    background-color: #DFD4BC; /* Légère variation pour l'interaction */
+    background-color: #B8C2B7; /* Légère variation pour l'interaction */
 }
 
