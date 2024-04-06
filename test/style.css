@@ -466,6 +466,22 @@ h1 {
     }
 }
 
+@media (max-width: 3800px) {
+    #image4 .section-text1 {
+        font-size: 1.5em;
+        margin-top: -5vh;
+    }
+
+    #image4 .section-text2 {
+        font-size: 1.5em;
+        margin-top: -5vh;
+    }
+
+    #image5 .section-text1 {
+        font-size: 1.8em;
+    }
+}
+
 .button-to-top {
     margin-top: 20px; /* Ajustez selon votre design */
     padding: 10px 20px;
